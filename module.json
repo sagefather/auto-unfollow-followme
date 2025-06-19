@@ -1,6 +1,6 @@
 {
   "id": "auto-unfollow-followme",
-  "title": "Auto Unfollow for Follow Me!",
+  "title": "Auto Unfollow",
   "description": "Automatically disables token following on combat start or teleport events. Integrates with the 'Follow Me!' module.",
   "version": "1.0.4",
   "authors": [
