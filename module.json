@@ -14,7 +14,7 @@
     "auto-unfollow.js"
   ],
   "url": "https://github.com/SageFather/auto-unfollow-followme",
-  "download": "https://github.com/SageFather/auto-unfollow-followme/releases/download/v1.0.4/auto-unfollow-followme.zip",
+  "download": "http://github.com/sagefather/auto-unfollow-followme/archive/v1.0.4.zip",
   "manifest": "https://raw.githubusercontent.com/SageFather/auto-unfollow-followme/main/module.json",
   "readme": "README.md",
   "license": "MIT",
