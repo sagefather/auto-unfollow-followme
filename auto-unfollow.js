@@ -31,17 +31,16 @@ Hooks.once("init", () => {
 Hooks.on("combatStart", () => {
   if (!game.settings.get("auto-unfollow-followme", "enableCombatStop")) return;
   for (const token of canvas.tokens.placeables) {
-    token.document.getFlag("FollowMe", "following").then(isFollowing => {
-      if (isFollowing) {
-        token.document.unsetFlag("FollowMe", "following");
-        if (game.settings.get("auto-unfollow-followme", "notifyGM")) {
-          ChatMessage.create({
-            content: `<strong>${token.name}</strong> auto-stopped following on combat start.`,
-            whisper: ChatMessage.getWhisperRecipients("GM")
-          });
-        }
+    const isFollowing = token.document.getFlag("FollowMe", "following");
+    if (isFollowing) {
+      token.document.unsetFlag("FollowMe", "following");
+      if (game.settings.get("auto-unfollow-followme", "notifyGM")) {
+        ChatMessage.create({
+          content: `<strong>${token.name}</strong> auto-stopped following on combat start.`,
+          whisper: ChatMessage.getWhisperRecipients("GM")
+        });
       }
-    });
+    }
   }
 });
 
@@ -55,7 +54,7 @@ Hooks.on("updateToken", async (doc, change) => {
   const distance = canvas.grid.measureDistance(prev, { x: newX, y: newY });
 
   if (distance > 60) {
-    const isFollowing = await doc.getFlag("FollowMe", "following");
+    const isFollowing = doc.getFlag("FollowMe", "following");
     if (isFollowing) {
       await doc.unsetFlag("FollowMe", "following");
       if (game.settings.get("auto-unfollow-followme", "notifyGM")) {
