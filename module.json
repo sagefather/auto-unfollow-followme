@@ -1,0 +1,20 @@
+{
+  "name": "auto-unfollow-followme",
+  "title": "Auto Unfollow for Follow Me!",
+  "description": "Automatically removes follow status on combat start or large movement (teleport).",
+  "version": "1.0.2",
+  "author": "SageFather",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "12",
+  "scripts": [
+    "auto-unfollow.js"
+  ],
+  "systems": [],
+  "esmodules": [],
+  "styles": [],
+  "url": "https://github.com/SageFather/auto-unfollow-followme",
+  "manifest": "https://raw.githubusercontent.com/SageFather/auto-unfollow-followme/main/module.json",
+  "download": "https://github.com/SageFather/auto-unfollow-followme/archive/refs/heads/main.zip",
+  "id": "auto-unfollow-followme",
+  "icon": "modules/auto-unfollow-followme/icon.png"
+}
