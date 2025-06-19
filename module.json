@@ -2,10 +2,10 @@
   "name": "auto-unfollow-followme",
   "title": "Auto Unfollow for Follow Me!",
   "description": "Automatically removes follow status on combat start or large movement (teleport).",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "SageFather",
   "minimumCoreVersion": "10",
-  "compatibleCoreVersion": "12",
+  "compatibleCoreVersion": "13",
   "scripts": [
     "auto-unfollow.js"
   ],
