@@ -1,6 +1,6 @@
 {
   "id": "auto-unfollow-followme",
-  "title": "Auto Unfollow",
+  "title": "Auto Unfollow for Follow Me!",
   "description": "Automatically disables token following on combat start or teleport events. Integrates with the 'Follow Me!' module.",
   "version": "1.0.4",
   "authors": [
@@ -14,7 +14,7 @@
     "auto-unfollow.js"
   ],
   "url": "https://github.com/SageFather/auto-unfollow-followme",
-  "download": "http://github.com/sagefather/auto-unfollow-followme/archive/v1.0.4.zip",
+  "download": "https://github.com/SageFather/auto-unfollow-followme/releases/download/v1.0.4/auto-unfollow-followme.zip",
   "manifest": "https://raw.githubusercontent.com/SageFather/auto-unfollow-followme/main/module.json",
   "readme": "README.md",
   "license": "MIT",
